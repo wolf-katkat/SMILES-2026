@@ -1,6 +1,6 @@
 The report on the project SMILES-2026 Signal Interference Cancellation
 
-# Abstarct
+# Abstract
 
 In this project it is necessary to tackle the problem of the cleaning the signal from the interference. It is already presented a baseline solution which is included in this solution. Moreover, there is a function rank1_from_band_matrix in the code task_and_baseline.py which allows us to clean the signal from from the external interference. The external noise influences channels in the same way therefore we can say that this noise is coherent. So, rank1_from_band_matrix function isolates this specific external noise. In order to do it, this function reduces data dimensionality, as we become 4-demension sygnal (from 4 channels), meanwhile a coherent interference is 1-dimesional, as it has only one source. In other words, it calculates the covariance matrix and takes only the eigenvector with the largest eigenvalue.
 
